@@ -1,77 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Desarrollo Web Profesional</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cardoso Web | Páginas Web Profesionales</title>
+  <meta name="description" content="Desarrollo páginas web modernas y rápidas para negocios, publicidad y portafolios. Cotiza por WhatsApp." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <!-- Header -->
+  <header class="header" id="top">
+    <nav class="nav container">
+      <a class="brand" href="#top">
+        <span class="badge">CW</span>
+        <span class="brandText">Cardoso Web</span>
+      </a>
 
-<header class="header">
-  <nav class="nav container">
-    <h1 class="logo">TuWebPro</h1>
-    <ul class="menu">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#planes">Planes</a></li>
-      <li><a href="#contacto" class="btn">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+      <button class="menuBtn" id="menuBtn" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
 
-<!-- HERO -->
-<section class="hero container">
-  <div class="hero-text">
-    <h2>Diseño y Desarrollo de Páginas Web Profesionales</h2>
-    <p>Creo páginas modernas, rápidas y responsivas para impulsar tu negocio o marca personal.</p>
-    <a href="#contacto" class="btn-primary">Cotiza tu página</a>
-  </div>
-</section>
+      <ul class="menu" id="menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#contacto" class="btn btn-primary">Cotizar</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- BENEFICIOS -->
-<section class="beneficios container">
-  <h3>¿Por qué trabajar conmigo?</h3>
-  <div class="grid">
-    <div class="card">Diseño moderno y profesional</div>
-    <div class="card">100% responsive (celular y PC)</div>
-    <div class="card">Optimización y velocidad</div>
-    <div class="card">Soporte y asesoría</div>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container heroGrid">
+      <div class="heroText">
+        <p class="pill">Diseño moderno • Responsive • Publicación en GitHub Pages</p>
+        <h1>
+          Te creo tu página web <span class="grad">profesional</span>
+          para que consigas clientes.
+        </h1>
+        <p class="sub">
+          Hago páginas rápidas, bonitas y claras: landing pages, páginas para negocios y portafolios.
+          Ideal para publicidad o presencia en internet.
+        </p>
 
-<!-- SERVICIOS -->
-<section id="servicios" class="servicios container">
-  <h3>Servicios</h3>
-  <div class="grid">
-    <div class="card">
-      <h4>Página Informativa</h4>
-      <p>Ideal para negocios y servicios.</p>
-    </div>
-    <div class="card">
-      <h4>Landing Page</h4>
-      <p>Diseñada para publicidad y ventas.</p>
-    </div>
-    <div class="card">
-      <h4>Sitio Web Empresarial</h4>
-      <p>Múltiples secciones y diseño avanzado.</p>
-    </div>
-    <div class="card">
-      <h4>Soporte y Mantenimiento</h4>
-      <p>Actualizaciones y mejoras.</p>
-    </div>
-  </div>
-</section>
+        <div class="cta">
+          <a href="#contacto" class="btn btn-primary">Cotizar ahora</a>
+          <a href="#" class="btn btn-ghost" id="btnWhatsTop">WhatsApp</a>
+        </div>
 
-<!-- PLANES -->
-<section id="planes" class="planes container">
-  <h3>Planes</h3>
-  <div class="grid">
-    <div class="plan">
-      <h4>Básico</h4>
-      <p>1 página</p>
-      <span>$XXX</span>
+        <div class="miniStats">
+          <div class="stat"><strong>24h</strong><span>respuesta</span></div>
+          <div class="stat"><strong>100%</strong><span>responsive</span></div>
+          <div class="stat"><strong>PRO</strong><span>diseño</span></div>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <div class="mockTop">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="mockBody">
+          <p class="mockLabel">Landing Example</p>
+          <h3>Convierte visitas en clientes</h3>
+          <p class="mockText">Estructura, CTA, testimonios, FAQ y contacto directo.</p>
+          <div class="mockBtns">
+            <div class="mb primary"></div>
+            <div class="mb ghost"></div>
+          </div>
+          <div class="mockGrid">
+            <div></div><div></div><div></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div cla
+  </section>
+
+  <!-- Beneficios -->
+  <section class="section">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>¿Qué obtienes?</h2>
+        <p>Una página lista para vender tu servicio o mostrar tu negocio.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Diseño Profesional</h3>
+          <p>Tipografía, colores y secciones con estilo tipo empresa.</p>
+        </article>
+        <article class="card">
+          <h3>Optimizada</h3>
+          <p>Carga rápida y estructura limpia para buena experiencia.</p>
+        </article>
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Se ve perfecto en celular, tablet y PC.</p>
+        </article>
+        <article class="card">
+          <h3>Publicación</h3>
+          <p>Te la dejo online con link para compartir en redes/WhatsApp.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="section alt" id="servicios">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Servicios</h2>
+        <p>Elige el tipo de página que necesitas.</p>
+      </div>
+
+      <div class="services">
+        <article class="service">
+          <h3>Landing Page</h3>
+          <p>Perfecta para publicidad y conversiones.</p>
+          <ul>
+            <li>Hero + CTA</li>
+            <li>Beneficios + testimonios</li>
+            <li>WhatsApp flotante</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <h3>Web para Negocio</h3>
+          <p>Presencia profesional para tu empresa.</p>
+          <ul>
+            <li>Servicios/galería</li>
+            <li>Mapa y contacto</li>
+            <li>Diseño responsive</li>
+          </ul>
+        </article>
+
+        <article class="service">
+          <h3>Portafolio</h3>
+          <p>Ideal para estudiantes / freelancers.</p>
+          <ul>
+            <li>Proyectos</li>
+            <li>Habilidades</li>
+            <li>CV / links</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section class="section" id="portafolio">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Portafolio</h2>
+        <p>Aquí pones tus páginas (pueden ser tus proyectos de la escuela también).</p>
+      </div>
+
+      <div class="portfolio">
+        <a class="work" href="#" target="_blank" rel="noopener">
+          <div class="thumb"></div>
+          <div class="workInfo">
+            <h3>Landing de Servicio</h3>
+            <p>Publicidad + CTA</p>
+          </div>
+        </a>
+
+        <a class="work" href="#" target="_blank" rel="noopener">
+          <div class="thumb t2"></div>
+          <div class="workInfo">
+            <h3>Web de Negocio</h3>
+            <p>Secciones + contacto</p>
+          </div>
+        </a>
+
+        <a class="work" href="#" target="_blank" rel="noopener">
+          <div class="thumb t3"></div>
+          <div class="workInfo">
+            <h3>Portafolio</h3>
+            <p>Proyectos + CV</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proceso -->
+  <section class="section alt">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>¿Cómo trabajamos?</h2>
+        <p>Proceso claro para entregar rápido y sin complicaciones.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step"><span>1</span><h3>Brief</h3><p>Me dices qué ocupas (tipo de web y contenido).</p></div>
+        <div class="step"><span>2</span><h3>Diseño</h3><p>Diseño la estructura y el estilo profesional.</p></div>
+        <div class="step"><span>3</span><h3>Desarrollo</h3><p>Programo la página y la dejo responsive.</p></div>
+        <div class="step"><span>4</span><h3>Publicación</h3><p>Te la subo y te doy el link para compartir.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes -->
+  <section class="section" id="planes">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Planes</h2>
+        <p>Edita precios según lo que cobres.</p>
+      </div>
+
+      <div class="pricing">
+        <article class="price">
+          <h3>Básico</h3>
+          <p class="tag">1 página</p>
+          <div class="money">$XXX</div>
+          <ul>
+            <li>Diseño simple</li>
+            <li>Responsive</li>
+            <li>Publicación</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contacto">Me interesa</a>
+        </article>
+
+        <article class="price popular">
+          <div class="ribbon">Recomendado</div>
+          <h3>Pro</h3>
+          <p class="tag">Completa</p>
+          <div class="money">$XXX</div>
+          <ul>
+            <li>Landing completa</li>
+            <li>Secciones + CTA</li>
+            <li>WhatsApp + Form</li>
+          </ul>
+          <a class="btn btn-primary" href="#contacto">Cotizar</a>
+        </article>
+
+        <article class="price">
+          <h3>Premium</h3>
+          <p class="tag">Negocio</p>
+          <div class="money">$XXX</div>
+          <ul>
+            <li>Varias secciones</li>
+            <li>Optimización extra</li>
+            <li>Soporte</li>
+          </ul>
+          <a class="btn btn-ghost" href="#contacto">Cotizar</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section alt">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>Opiniones</h2>
+        <p>Puedes poner reales después, por ahora ejemplos.</p>
+      </div>
+
+      <div class="testis">
+        <div class="testi">
+          <p>“Quedó muy bien la web y me respondió rápido. Ya tengo link para compartir.”</p>
+          <strong>Cliente 1</strong><span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="testi">
+          <p>“Diseño pro y quedó perfecta en celular. Muy recomendado.”</p>
+          <strong>Cliente 2</strong><span>⭐⭐⭐⭐⭐</span>
+        </div>
+        <div class="testi">
+          <p>“Me ayudó con cambios y la dejó lista para publicar. Excelente.”</p>
+          <strong>Cliente 3</strong><span>⭐⭐⭐⭐⭐</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="sectionTitle">
+        <h2>FAQ</h2>
+        <p>Dudas comunes que siempre preguntan.</p>
+      </div>
+
+      <div class="faq">
+        <details open>
+          <summary>¿Cuánto tardas?</summary>
+          <p>Depende del plan, pero normalmente de 1 a 5 días.</p>
+        </details>
+        <details>
+          <summary>¿Incluyes hosting?</summary>
+          <p>La subo gratis en GitHub Pages o Netlify. Dominio propio es opcional.</p>
+        </details>
+        <details>
+          <summary>¿Se puede editar después?</summary>
+          <p>Sí, te dejo el proyecto para que puedas editar textos/imágenes.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section alt" id="contacto">
+    <div class="container contactGrid">
+      <div>
+        <h2>Listo para tu página</h2>
+        <p>Déjame tu info y te mando cotización por WhatsApp.</p>
+
+        <div class="contactCards">
+          <div class="contactCard">
+            <strong>WhatsApp</strong>
+            <span id="waText">+52 712 116 9577</span>
+          </div>
+          <div class="contactCard">
+            <strong>Entrega</strong>
+            <span>Link + archivos del proyecto</span>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="form">
+        <label>
+          Nombre
+          <input required name="nombre" type="text" placeholder="Tu nombre" />
+        </label>
+        <label>
+          Teléfono / WhatsApp
+          <input required name="telefono" type="tel" placeholder="Ej. 7121169577" />
+        </label>
+        <label>
+          ¿Qué página quieres?
+          <textarea required name="mensaje" rows="4" placeholder="Ej. Landing para mi negocio, 5 secciones..."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+        <p class="small">Se abrirá WhatsApp con tu mensaje listo.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot">
+      <p>© <span id="year"></span> Cardoso Web</p>
+      <a href="#top">Volver arriba</a>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flotante -->
+  <a class="waFloat" id="waFloat" href="#" title="WhatsApp" aria-label="WhatsApp">WA</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

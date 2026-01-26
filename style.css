@@ -333,7 +333,7 @@ textarea{ resize:vertical; }
   place-items: center;
 
   border-radius: 50%;
-  overflow: hidden;      /* 🔥 CLAVE: recorta la imagen */
+  overflow: hidden;      /*  CLAVE: recorta la imagen */
   background: transparent;
 
   border: none;
@@ -348,8 +348,8 @@ textarea{ resize:vertical; }
 .waImg{
   width: 100%;
   height: 100%;
-  object-fit: cover;     /* 🔥 llena el círculo */
-  border-radius: 50%;    /* 🔥 fuerza círculo */
+  object-fit: cover;     /*  llena el círculo */
+  border-radius: 50%;    /*  fuerza círculo */
   display: block;
 }
 
